@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sac_summits",
+  "info": {
+    "singularName": "sac-summit",
+    "pluralName": "sac-summits",
+    "displayName": "SacSummit"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Tags": {
+      "type": "string"
+    },
+    "ThumbnailUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_dialogues",
+  "info": {
+    "singularName": "e-dialogue",
+    "pluralName": "e-dialogues",
+    "displayName": "eDialogue"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "thumbnailUrl": {
+      "type": "string"
+    },
+    "Tags": {
+      "type": "string"
+    }
+  }
+}

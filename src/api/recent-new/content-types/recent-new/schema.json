@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recent_news",
+  "info": {
+    "singularName": "recent-new",
+    "pluralName": "recent-news",
+    "displayName": "RecentNew",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "blocks",
+      "required": false
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "cover_stories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cover-story.cover-story",
+      "mappedBy": "recent_new"
+    }
+  }
+}

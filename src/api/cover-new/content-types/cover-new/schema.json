@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cover_news",
+  "info": {
+    "singularName": "cover-new",
+    "pluralName": "cover-news",
+    "displayName": "CoverNew"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

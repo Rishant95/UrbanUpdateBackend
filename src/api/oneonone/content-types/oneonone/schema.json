@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oneonones",
+  "info": {
+    "singularName": "oneonone",
+    "pluralName": "oneonones",
+    "displayName": "Oneonone"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}

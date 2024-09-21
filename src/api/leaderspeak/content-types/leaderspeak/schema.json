@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaderspeaks",
+  "info": {
+    "singularName": "leaderspeak",
+    "pluralName": "leaderspeaks",
+    "displayName": "Leaderspeak"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}

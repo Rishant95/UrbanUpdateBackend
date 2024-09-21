@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "velocities",
+  "info": {
+    "singularName": "velocity",
+    "pluralName": "velocities",
+    "displayName": "Velocity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}

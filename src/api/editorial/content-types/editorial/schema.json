@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editorials",
+  "info": {
+    "singularName": "editorial",
+    "pluralName": "editorials",
+    "displayName": "Editorial"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}

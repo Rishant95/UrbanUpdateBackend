@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookreviews",
+  "info": {
+    "singularName": "bookreview",
+    "pluralName": "bookreviews",
+    "displayName": "Bookreview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}

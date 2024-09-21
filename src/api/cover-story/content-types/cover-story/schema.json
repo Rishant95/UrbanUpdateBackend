@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cover_stories",
+  "info": {
+    "singularName": "cover-story",
+    "pluralName": "cover-stories",
+    "displayName": "HeaderNew",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "blocks",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "recent_new": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::recent-new.recent-new",
+      "inversedBy": "cover_stories"
+    }
+  }
+}

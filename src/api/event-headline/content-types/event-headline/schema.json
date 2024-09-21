@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_headlines",
+  "info": {
+    "singularName": "event-headline",
+    "pluralName": "event-headlines",
+    "displayName": "EventHeadline"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Tags": {
+      "type": "string"
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "thumbnailUrl": {
+      "type": "string"
+    }
+  }
+}
